@@ -1,11 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-?>
-<?php
-    $this->load->helper('url_helper');
-    $this->session->set_userdata('idsociete',1);
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -86,10 +81,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
 	</div>
-<a href="<?php echo site_url('main/formulaireCompteG')?>">formulaireCompteG</a>
-<a href="<?php echo site_url('main/test') ;  ?>"> Test</a>
-<a href="<?php echo site_url('main/tiers') ;  ?>"> Tiers</a>
-<a href="<?php echo site_url('main/balance') ;  ?>"> Bsalance</a>
+
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
 

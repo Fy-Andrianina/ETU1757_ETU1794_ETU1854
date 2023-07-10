@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="<?php echo site_url('assets/css/login/style.css')?>" >
 
     </head>
-    <body>
+    <body class="login-admin">
     <script>
        window.addEventListener('load',function(){
             <?php if(isset($error)){  ?>
@@ -39,9 +39,9 @@
     
 
 
-<main class="login-body" >
+<main class="login-body " >
     <!-- Login Admin -->
-    <form class="form-default" action="login_con/check_login_user" method="POST">
+    <form class="form-default" action="check_login_admin" method="POST">
         
         <div class="login-form">
             <!-- logo-login -->
@@ -63,7 +63,6 @@
             
          
            
-            <a href="utilisateur_con/inscription" class="registration" style="font-size:30px"> S'inscrire</a>
         </div>
     </form>
     <!-- /end login form -->

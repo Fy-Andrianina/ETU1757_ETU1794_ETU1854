@@ -1,7 +1,7 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Session_Controller extends CI_Controller {
+class Session_controller extends CI_Controller {
     function __construct()
     {
         parent::__construct(); 

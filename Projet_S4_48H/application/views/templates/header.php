@@ -1,139 +1,142 @@
+<link rel="stylesheet" href="<?php echo site_url('assets/css/landing/classy-nav.css')?>" >
+<link rel="stylesheet" href="<?php echo site_url('assets/css/landing/bootstrap.min.css')?>" >
+    <link rel="stylesheet" href="<?php echo site_url('assets/css/landing/font-awesome.min.css')?>" >
+    <link rel="stylesheet" href="<?php echo site_url('assets/css/landing/landing.css')?>" >
+    <link rel="stylesheet" href="<?php echo site_url('assets/css/landing/animate.css')?>" >
+    <link rel="stylesheet" href="<?php echo site_url('assets/css/landing/owl.carousel.css')?>" >
+    <!-- Preloader 
+     <div id="preloader">
+        <div class="preload-content">
+            <div id="original-load"></div>
+        </div>
+    </div> -->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>FOI</title>
-  <!-- plugins:css -->
-  <link rel="stylesheet" href="<?php echo site_url('assets/vendors/feather/feather.css') ; ?> ">
-  <link href="<?php echo site_url('assets/css/myCss.css'); ?>" type="text/css" rel="stylesheet" />
-
-  <link rel="stylesheet" href="<?php echo site_url('assets/vendors/ti-icons/css/themify-icons.css') ; ?> ">
-  <link rel="stylesheet" href="<?php echo site_url('assets/vendors/css/vendor.bundle.base.css') ; ?> ">
-  <!-- endinject -->
-  <!-- Plugin css for this page -->
-  <link rel="stylesheet" href="<?php echo site_url('assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css') ; ?> ">
-  <link rel="stylesheet" href="<?php echo site_url('assets/vendors/ti-icons/css/themify-icons.css') ; ?>">
-  <link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/js/select.dataTables.min.css') ; ?>">
-  <!-- End plugin css for this page -->
-  <!-- inject:css -->
-  <link rel="stylesheet" href="<?php echo site_url('assets/css/vertical-layout-light/style.css') ; ?>">
-  
-    <link href="<?php echo site_url('assets/css/font-face.css'); ?>" rel="stylesheet" media="all">
-    <link href="<?php echo site_url('assets/font-awesome-4.7/css/font-awesome.min.css'); ?>" rel="stylesheet" media="all">
-    <link href="<?php echo site_url('assets/font-awesome-5/css/fontawesome-all.min.css'); ?>" rel="stylesheet" media="all">
-    <link href="<?php echo site_url('assets/mdi-font/css/material-design-iconic-font.min.css'); ?>" rel="stylesheet" media="all">
-    <link href="<?php echo site_url('assets/css/test.css'); ?>" type="text/css" rel="stylesheet" />
-    <link href="<?php echo site_url('assets/css/bootstrap.min.css'); ?>" type="text/css" rel="stylesheet" />
-    <link href="<?php echo site_url('assets/css/style.css'); ?>" type="text/css" rel="stylesheet" />
-    <!-- Bootstrap CSS-->
-    <link href="<?php echo site_url('assets/vendor/bootstrap-4.1/bootstrap.min.css'); ?>" rel="stylesheet" media="all">
-
-    <!-- Vendor CSS-->
-    <link href="<?php echo site_url('assets/vendor/animsition/animsition.min.css'); ?>" rel="stylesheet" media="all">
-    <link href="<?php echo site_url('assets/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css'); ?>" rel="stylesheet" media="all">
-    <link href="<?php echo site_url('assets/vendor/wow/animate.css'); ?>" rel="stylesheet" media="all">
-    <link href="<?php echo site_url('assets/vendor/css-hamburgers/hamburgers.min.css'); ?>" rel="stylesheet" media="all">
-    <link href="<?php echo site_url('assets/vendor/slick/slick.css'); ?>" rel="stylesheet" media="all">
-    <link href="<?php echo site_url('assets/vendor/select2/select2.min.css'); ?>" rel="stylesheet" media="all">
-    <link href="<?php echo site_url('assets/vendor/perfect-scrollbar/perfect-scrollbar.css'); ?>" rel="stylesheet" media="all">
-
-    <!-- Main CSS-->
-    <link href="<?php echo site_url('assets/css/theme.css'); ?>" rel="stylesheet" media="all">
-    <link href="<?php echo site_url('assets/css/style.css'); ?>" rel="stylesheet" media="all">
-</head>
-<body>
-  <div class="container-scroller">
-    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-    <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <img src="<?php echo site_url('assets/logo/5.svg'); ?>" class="logo" alt="logo" style="width: 3.5pc; height: auto;  border-radius: 20%;">
-        <a class="navbar-brand brand-logo-mini" href="#"><img src="<?php echo site_url('assets/logo/5.svg'); ?>" alt="logo"/></a>
-      </div>  
-    <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-            <a class="nav-link" data-toggle="collapse" href="<?php echo site_url('info_con/leave'); ?>" aria-expanded="false" aria-controls="charts">
-              <i class="icon-home menu-icon"></i>
-              <span class="menu-title">Deconnexion</span>
-            </a>
-        <ul class="navbar-nav mr-lg-2">
-          <li class="nav-item nav-search d-none d-lg-block">
-            <div class="input-group">
-              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
-                <span class="input-group-text" id="search">
-                  <i class="icon-search"></i>
-                </span>
-              </div>
-              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+    <!-- Subscribe Modal -->
+    <div class="subscribe-newsletter-area">
+        <div class="modal fade" id="subsModal" tabindex="-1" role="dialog" aria-labelledby="subsModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="modal-body">
+                        <h5 class="title">Regime routine</h5>
+                        <form action="#" class="newsletterForm" method="post">
+                            <input type="email" name="email" id="subscribesForm2" placeholder="Your e-mail here">
+                            <button type="submit" class="btn original-btn">Suiver nous</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-        <!-- partial:partials/_sidebar.html -->
-            <div class="container-fluid page-body-wrapper">
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="<?php echo site_url('info_con/enter'); ?>" aria-expanded="false" aria-controls="icons">
-              <i class="icon-bar-graph menu-icon"></i>
-              <span class="menu-title">Accueil</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url('codeJournal_con'); ?>">
-              <i class="icon-grid menu-icon"></i>
-              <span class="menu-title">Journaux</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="<?php echo site_url('main/test'); ?>" aria-expanded="false" aria-controls="ui-basic"  >
-              <i class="icon-layout menu-icon"></i>
-              <span class="menu-title">Plan Comptable general</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="<?php echo site_url('main/tiers'); ?>" aria-expanded="false" aria-controls="form-elements">
-              <i class="icon-columns menu-icon"></i>
-              <span class="menu-title">Comptes auxilliaires</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="<?php echo site_url('devise_con'); ?>" aria-expanded="false" aria-controls="charts">
-              <i class="icon-heart menu-icon"></i>
-              <span class="menu-title">Devise</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="<?php echo site_url('grandLivre_con'); ?>" aria-expanded="false" aria-controls="tables">
-              <i class="icon-grid-2 menu-icon"></i>
-              <span class="menu-title">Grand Livre</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="<?php echo site_url('cJ_con'); ?>" aria-expanded="false" aria-controls="icons">
-              <i class="icon-contract menu-icon"></i>
-              <span class="menu-title">Code Journal</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="<?php echo site_url('main/balance'); ?>" aria-expanded="false" aria-controls="icons">
-              <i class="icon-bar-graph menu-icon"></i>
-              <span class="menu-title">Balance</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="<?php echo site_url('bilan_con'); ?>" aria-expanded="false" aria-controls="icons">
-              <i class="icon-bar-graph menu-icon"></i>
-              <span class="menu-title">Bilan</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="<?php echo site_url('main/importCsv'); ?>" aria-expanded="false" aria-controls="icons">
-              <i class="icon-bar-graph menu-icon"></i>
-              <span class="menu-title">Import</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <!-- Breaking News Area -->
+                    <div class="col-12 col-sm-8">
+                        <div class="breaking-news-area">
+                            <div id="breakingNewsTicker" class="ticker">
+                                <ul>
+                                    <li><a href="#">Bonjour!</a></li>
+                                    <li><a href="#">Hello !</a></li>
+                                    <li><a href="#">Gutten tag!</a></li>
+                                    <li><a href="#">Salama!</a></li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Top Social Area -->
+                    <div class="col-12 col-sm-4">
+                        <div class="top-social-area">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo Area -->
+        <div class="logo-area text-center">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <a href="index.html" class="original-logo"><img src="img/core-img/logo.png" alt="not found"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nav Area -->
+        <div class="original-nav-area" id="stickyNav">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between">
+
+                        <!-- Subscribe btn -->
+                        <div class="subscribe-btn">
+                            <a href="#" class="btn subscribe-btn" data-toggle="modal" data-target="#subsModal">Regime</a>
+                        </div>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu" id="originalNav">
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="<?php echo site_url('landing_con'); ?>">Home</a></li>
+                                    <li><a href=" <?php echo site_url('achat_code_con'); ?>">Achat des codes</a></li>
+                                    <li><a href="<?php echo site_url('profil_con'); ?>">Profil</a></li>
+                                
+                                    <li><a href="<?php echo site_url('Sign_con') ?>">Sign</a></li>
+                                    <li><a href="#">Megamenu</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+
+                                <!-- Search Form  -->
+                                <div id="search-wrapper">
+                                    <form action="#">
+                                        <input type="text" id="search" placeholder="Search something...">
+                                        <div id="close-icon"></div>
+                                        <input class="d-none" type="submit" value="">
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+      <!-- jQuery (Necessary for All JavaScript Plugins) -->
+      <script src="<?php echo site_url('assets/js/jquery/jquery-2.2.4.min.js');?>"></script>
+    <!-- Popper js -->
+    <script src="<?php echo site_url('assets/js/popper.min.js'); ?>"></script>
+    <!-- Bootstrap js -->
+    <script src="<?php echo site_url('assets/js/bootstrap.min.js')?>"></script>
+    <!-- Plugins js -->
+    <script src="<?php echo site_url('assets/js/plugins.js')?>"></script>
+    <!-- Active js -->
+    <script src="<?php echo site_url('assets/js/active.js'); ?>"></script>
+
+    </header>

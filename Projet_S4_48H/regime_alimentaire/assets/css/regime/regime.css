@@ -1,0 +1,16 @@
+.grille{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-gap: 10%;
+    grid-row-gap:10% ;
+}
+.box{
+    /* background: linear-gradient(to bottom right, #7fe2df, #71a4be); */
+    background: linear-gradient(to bottom right, #d774c7, #9b8dc0);
+    border-style: outset;
+    height:300px;
+    padding: 10px 10px 30px 30px;
+    border-bottom-left-radius: 30px;
+    margin-top: 10%;
+    box-shadow: #7fe2df 3px;
+}
